@@ -66,11 +66,11 @@ function Scene(props: { mode?: SplatMaterialType | 'badSorting' | 'alphaTest' | 
   const showSecondModel = mode === 'alphaTest' || mode === 'alphaHash' || mode === 'badSorting';
   const materialType = showSecondModel ? 'base' : mode;
 
-  const group = useRef<THREE.Group>(null!);
+  // const group = useRef<THREE.Group>(null!);
 
-  useFrame(({ clock }) => {
-    group.current.position.y = Math.sin(clock.getElapsedTime() * 1) * 2;
-  });
+  // useFrame(({ clock }) => {
+  //   group.current.position.y = Math.sin(clock.getElapsedTime() * 1) * 2;
+  // });
 
   return (
     <>
@@ -85,7 +85,7 @@ function Scene(props: { mode?: SplatMaterialType | 'badSorting' | 'alphaTest' | 
         alphaTest={mode === 'alphaTest' ? 0.1 : undefined}
         alphaHash={mode === 'alphaHash' ? true : false}
       />
-      <group ref={group}>
+      {/* <group ref={group}>
         <Splat
           src="https://pub-c94e113880784f8f8227940d6abceeef.r2.dev/gs_church.splat"
           position={[1, 0, 0]}
@@ -93,7 +93,7 @@ function Scene(props: { mode?: SplatMaterialType | 'badSorting' | 'alphaTest' | 
           alphaTest={mode === 'alphaTest' ? 0.1 : undefined}
           alphaHash={mode === 'alphaHash' ? true : false}
         />
-      </group>
+      </group> */}
     </>
   );
 }
