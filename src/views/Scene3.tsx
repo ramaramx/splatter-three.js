@@ -45,7 +45,7 @@ function Dialog(props: {
 }) {
   const { title, body, next, previous, prevDisabled, nextDisabled } = props;
   return (
-    <div className="dialog">
+    <div className="dialog" style={{ display: 'none'}}>
       <h1>Getting Creative with Gaussian Splatting</h1>
       <h2>{title}</h2>
       <div className="dialog__body">{typeof body === 'string' ? <p>{body}</p> : body}</div>
