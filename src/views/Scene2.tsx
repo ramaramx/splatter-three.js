@@ -1,5 +1,5 @@
 import '../App.css';
-import { Canvas, useFrame } from '@react-three/fiber';
+import { Canvas } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
 import { Splat, SplatMaterialType } from '../Splat';
 import { ReactNode, useRef, useState } from 'react';
@@ -77,7 +77,7 @@ function Scene(props: { mode?: SplatMaterialType | 'badSorting' | 'alphaTest' | 
         position={[0, 0, 0]}
         materialType={materialType}
         alphaTest={mode === 'alphaTest' ? 0.1 : undefined}
-        alphaHash={mode === 'alphaHash' ? true : false}
+        alphaHash={mode === 'alphaHash'}
       />
     </>
   );

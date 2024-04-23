@@ -1,9 +1,10 @@
 import '../App.css';
-import { Canvas, useFrame } from '@react-three/fiber';
+import { Canvas } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
 import { Splat, SplatMaterialType } from '../Splat';
 import { ReactNode, useRef, useState } from 'react';
 import { content } from '../content';
+import Button from '../components/button';
 
 function Scene3() {
   const container = useRef<HTMLDivElement>(null!);
@@ -45,17 +46,19 @@ function Dialog(props: {
 }) {
   const { title, body, next, previous, prevDisabled, nextDisabled } = props;
   return (
-    <div className="dialog" style={{ display: 'none'}}>
+    <div className="dialog">
       <h1>Getting Creative with Gaussian Splatting</h1>
       <h2>{title}</h2>
       <div className="dialog__body">{typeof body === 'string' ? <p>{body}</p> : body}</div>
       <div className="dialog__button-container">
-        <button onClick={previous} disabled={prevDisabled}>
-          Previous
-        </button>
-        <button onClick={next} disabled={nextDisabled}>
-          Next
-        </button>
+        <Button
+          onClick={previous}
+          disabled={!!prevDisabled}
+          title={'Previous'} />
+        <Button
+          onClick={next}
+          disabled={!!nextDisabled}
+          title={'Next'} />
       </div>
     </div>
   );
@@ -77,7 +80,7 @@ function Scene(props: { mode?: SplatMaterialType | 'badSorting' | 'alphaTest' | 
         position={[0, 0, 0]}
         materialType={materialType}
         alphaTest={mode === 'alphaTest' ? 0.1 : undefined}
-        alphaHash={mode === 'alphaHash' ? true : false}
+        alphaHash={mode === 'alphaHash'}
       />
     </>
   );
