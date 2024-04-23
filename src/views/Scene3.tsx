@@ -84,3 +84,4 @@ function Scene(props: { mode?: SplatMaterialType | 'badSorting' | 'alphaTest' | 
 }
 
 export default Scene3;
+
