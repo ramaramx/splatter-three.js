@@ -73,7 +73,7 @@ function Scene(props: { mode?: SplatMaterialType | 'badSorting' | 'alphaTest' | 
       <pointLight position={[10, 10, 10]} />
       <OrbitControls />
       <Splat
-        src="/brian-test.splat"
+        src="https://www.3dgaussiansplat.awayin.nl/brian-test.splat"
         position={[0, 0, 0]}
         materialType={materialType}
         alphaTest={mode === 'alphaTest' ? 0.1 : undefined}
