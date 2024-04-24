@@ -1,4 +1,4 @@
-# Getting Creative with Gaussian Splatting
+# Gaussian Splatting
 
 ![3D scene with Gaussian splatting](/docs/creative-gaussian-splatting.webp)
 
