@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './views/home'
-import Scene1 from './views/Scene1';
+import {Scene1} from './views/Scene1';
 import Scene2 from './views/Scene2';
 import Scene3 from './views/Scene3';
 

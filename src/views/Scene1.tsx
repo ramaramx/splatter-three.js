@@ -5,7 +5,7 @@ import { Splat, SplatMaterialType } from '../Splat';
 import { ReactNode, useRef, useState } from 'react';
 import { content } from '../content';
 
-function Scene1() {
+const Scene1 = () => {
   const container = useRef<HTMLDivElement>(null!);
   const [step, setStep] = useState(0);
   return (
@@ -33,7 +33,7 @@ function Scene1() {
       </div>
     </>
   );
-}
+
 
 function Dialog(props: {
   title: string;
@@ -82,5 +82,5 @@ function Scene(props: { mode?: SplatMaterialType | 'badSorting' | 'alphaTest' | 
     </>
   );
 }
-
-export default Scene1;
+}
+export {Scene1};
