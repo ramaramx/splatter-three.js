@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App.tsx';
+import App from './views/home.tsx';
 import './index.css';
 import Scene1  from './views/Scene1.tsx';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
