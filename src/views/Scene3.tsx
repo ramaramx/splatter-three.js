@@ -76,7 +76,7 @@ function Scene(props: { mode?: SplatMaterialType | 'badSorting' | 'alphaTest' | 
       <pointLight position={[10, 10, 10]} />
       <OrbitControls />
       <Splat
-        src="https://s3.ciptadusa.com/api/v1/download-shared-object/aHR0cDovLzEyNy4wLjAuMTo5MDAwL2NvbW1vbi1idWNrZXQvdHNhZy5zcGxhdD9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPTNLTVg0M1VWTklMTUdaQzVKNVkxJTJGMjAyNDA0MjUlMkZzZ3AtY29udGFibyUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA0MjVUMTMxMjE3WiZYLUFtei1FeHBpcmVzPTQzMjAwJlgtQW16LVNlY3VyaXR5LVRva2VuPWV5SmhiR2NpT2lKSVV6VXhNaUlzSW5SNWNDSTZJa3BYVkNKOS5leUpoWTJObGMzTkxaWGtpT2lJelMwMVlORE5WVms1SlRFMUhXa00xU2pWWk1TSXNJbVY0Y0NJNk1UY3hOREE1TXpRMU55d2ljR0Z5Wlc1MElqb2lZMmx3ZEdGa2RYTmhJbjAua0lyMlMxd1N3bHNEV0tVWjBtR292RXBOMm16cTlqcDNkblA5QzhJeE1ZRVZYcG5CLWthZUdpUG1ET0I0emR2MWZzcFllVmg3ZDlrZkRBWEotejBnLUEmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnZlcnNpb25JZD1udWxsJlgtQW16LVNpZ25hdHVyZT1mMjg4YWM1Y2JmYjY5MTM1Y2IyNTgyYzIxNjlhMDBmZjFkYjU4NWQ4MTc2YWY3ZDhiZWE1OTA5YWMxOGFkZjlh"
+        src="https://files.ciptadusa.com/common-bucket/tsag.splat"
         position={[0, 0, 0]}
         materialType={materialType}
         alphaTest={mode === 'alphaTest' ? 0.1 : undefined}
