@@ -1,11 +1,13 @@
-import '../App.css';
+// Scene1.js
+import React from 'react';
 
-function Scene1() {
-    return(
-        <>
-        <div style={{textAlign: 'center', color: 'white', fontSize: '24px', position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, 0)'}}>Gaussian Splatting</div>
-        </>
-    )
+const Scene1 = () => {
+  return (
+    <div>
+      <h1>Scene1</h1>
+      {/* Isi dari Scene1 */}
+    </div>
+  );
 }
 
-export default Scene1
+export default Scene1;
