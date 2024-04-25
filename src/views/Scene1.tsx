@@ -1,6 +1,4 @@
 // Scene1.js
-import React from 'react';
-
 const Scene1 = () => {
   return (
     <div>
